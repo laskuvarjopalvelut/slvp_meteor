@@ -1,0 +1,10 @@
+<template name="customerItem">
+   {{#with customer}}
+		    	<div class="panel panel-default">
+				  <div class="panel-heading">
+				    <h3 class="panel-title"><a href="{{pathFor 'customerPage'}}">     
+					    {{name}}</a></h3>
+				  </div>
+				</div>
+    {{/with}}
+</template>

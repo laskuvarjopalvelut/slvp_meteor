@@ -1,0 +1,23 @@
+<template name="listProducts">
+	<div class="page-header">
+	  <h1>Tuotteet <a href="{{pathFor 'newProduct'}}"><i class="fa fa-plus"></i></a></h1>
+	</div>
+	
+	<div class="row-fluid">
+		    {{#each product}}
+		    <div class="col-md-12 col-sm-12 col-xs-12">
+		    	<div class="panel panel-default">
+				  <div class="panel-heading">
+				    <h3 class="panel-title"><a href="{{pathFor 'productPage'}}">     
+					    {{name}}</a></h3>
+				  </div>
+				  <div class="panel-body">
+				  		Product info here
+						<br>
+					    <i class="fa fa-edit"></i> <a href="{{pathFor 'editProduct'}}">Muokkaa tuotetta</a>
+				  </div>
+				</div>
+			</div>
+		    {{/each}}
+    </div>
+</template>
